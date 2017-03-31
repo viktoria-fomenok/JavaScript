@@ -44,8 +44,6 @@ equation();
 
 
 ////////////////////////////////////////////task_1
-inputUser ();
-outputUser();
 
 function fname () {
     do {
@@ -124,3 +122,6 @@ function inputUser () {
     if (fcourse() === 0) return;
     farrears();
 }
+
+inputUser ();
+outputUser();
