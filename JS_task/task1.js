@@ -44,36 +44,35 @@ equation();
 
 
 ////////////////////////////////////////////task_1
-
-function fname () {
+function name () {
     do {
-        name = prompt('Input name: ');
+        var name = prompt('Input name: ');
         if (name === null) return 0;
     } while (!isNaN(name) || name === '');
 }
 
-function fsurname () {
+function surname () {
     do {
-        surname = prompt('Input surname: ');
+        var surname = prompt('Input surname: ');
         if (surname === null) return 0;
     } while (!isNaN(surname) || surname === '');
 }
 
-function fpatronymic () {
+function patronymic () {
     do {
-        patronymic = prompt('Input patronymic: ');
+        var patronymic = prompt('Input patronymic: ');
         if (patronymic === null) return 0;
     } while (!isNaN(patronymic) || patronymic === '');
 }
 
-function fage () {
+function age () {
     do {
-        age = prompt("Input age: ");
+        var age = prompt("Input age: ");
         if (age === null) return 0;
     } while (isNaN(age) || age <= 0 || age > 150);
 }
 
-function fgender () {
+function gender () {
     if (confirm('Are you female?')) {
         gender = 'Female'
     } else {
@@ -81,21 +80,21 @@ function fgender () {
     }
 }
 
-function funiversity () {
+function university () {
     do {
-        university = prompt('Input university: ');
+        var university = prompt('Input university: ');
         if (university === null) return 0;
     } while (!isNaN(university) || university === '');
 }
 
-function fcourse () {
+function course () {
     do {
-        course = prompt("Input course: ");
+        var course = prompt("Input course: ");
         if (course === null) return 0;
     } while (isNaN(course) || course <= 0 || course > 6);
 }
 
-function farrears () {
+function arrears () {
     if (confirm('Have you got an arrears?')) {
         arrears = 'Yes'
     } else {
@@ -109,19 +108,19 @@ function outputUser () {
         + "university: " + university + "\n"
         + "course: " + course + "\n"
         + "gender: " + gender + "\n"
-        + "arrears: " + arrears + "\n");
+        + "arrears: " + arrears + "\n")
 }
 
 function inputUser () {
-    if (fname() === 0) return;
-    if (fsurname() === 0) return;
-    if (fpatronymic() === 0) return;
-    if (fage() === 0) return;
-    fgender();
-    if (funiversity() === 0) return;
-    if (fcourse() === 0) return;
-    farrears();
+    if (name() === 0) return;
+    if (surname() === 0) return;
+    if (patronymic() === 0) return;
+    if (age() === 0) return;
+    gender();
+    if (university() === 0) return;
+    if (course() === 0) return;
+    arrears();
 }
 
-inputUser ();
+inputUser();
 outputUser();
