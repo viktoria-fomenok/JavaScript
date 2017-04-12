@@ -9,6 +9,6 @@
 <p><a href="https://jsfiddle.net/viktoria_fomenok/xLyjhyz8/">ArrayMin3</a></p>
 <p><a href="https://jsfiddle.net/viktoria_fomenok/Lph8zqtc/">ArrayFilter</a></p>
 <hr>
-
-
-
+<h3>Task3</h3>
+<p><a href="https://jsfiddle.net/viktoria_fomenok/j1z2xek0/">LocalStorage</a></p>
+<hr>
